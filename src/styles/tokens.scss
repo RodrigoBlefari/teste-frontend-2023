@@ -1,0 +1,91 @@
+// Arquivo: src/styles/global.scss
+
+// Action
+$color-action-lightest: #b9d7e8;
+$color-action-light: #529ec6;
+$color-action-medium: #0070ab;
+$color-action-dark: #005582;
+$color-action-darkest: #004266;
+
+// Neutral
+$color-neutral-lightest: #ffffff;
+$color-neutral-light: #ececec;
+$color-neutral-medium-04: #cccccc;
+$color-neutral-medium-03: #999999;
+$color-neutral-medium-02: #666666;
+$color-neutral-medium-01: #444444;
+$color-neutral-dark: #202020;
+$color-neutral-darkest: #000000;
+
+// Alert
+$color-alert-info: #b7cce3;
+$color-alert-success: #b5eac6;
+$color-alert-attention: #ffdd96;
+$color-alert-error: #efb4ba;
+
+// Typography
+
+//Family
+$font-family-default: "Roboto", sans-serif;
+
+//Weight
+$font-family-light: "light";
+$font-family-regular: "normal";
+$font-family-medium: "medium";
+$font-family-bold: "bold";
+
+//Size
+$font-size-nano: 0.75rem;
+$font-size-micro: 0.875rem;
+$font-size-base: 1rem;
+$font-size-xxs: 1.125rem;
+$font-size-xs: 1.25rem;
+$font-size-sm: 1.5rem;
+$font-size-md: 2rem;
+$font-size-lg: 2.5rem;
+$font-size-xl: 3rem;
+$font-size-xxl: 3.5rem;
+$font-size-xxxl: 4.5rem;
+$font-size-giant: 5.5rem;
+$font-size-huge: 6.5rem;
+
+//Height
+$line-height-lightest: 1;
+$line-height-tight: 1.3;
+$line-height-medium: 1.5;
+$line-height-loose: 1.7;
+
+//Spacing
+$spacing-nano: 4px;
+$spacing-micro: 8px;
+$spacing-xxxs: 12px;
+$spacing-xxs: 16px;
+$spacing-xs: 24px;
+$spacing-sm: 32px;
+$spacing-md: 40px;
+$spacing-lg: 56px;
+$spacing-xl: 80px;
+$spacing-xxl: 120px;
+$spacing-giant: 160px;
+$spacing-huge: 200px;
+
+//Spacing squish
+$spacing-squish-nano: 4px 8px;
+$spacing-squish-micro: 8px 16px;
+$spacing-squish-sm: 12px 24px;
+$spacing-squish-md: 16px 32px;
+$spacing-squish-lg: 24px 48px;
+
+//lines
+$stroke-100: 1px;
+$stroke-200: 2px;
+$stroke-300: 4px;
+$stroke-400: 6px;
+$stroke-500: 8px;
+
+// borders
+$radius-100: 1px;
+$radius-200: 2px;
+$radius-300: 4px;
+$radius-400: 16px;
+$radius-pill: 56px;
