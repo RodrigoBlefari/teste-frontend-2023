@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: $font-family-default;
-    background-color: $color-action-darkest;
+    background-color: $color-neutral-lightest;
 }
 
 a {
@@ -24,4 +24,13 @@ button {
     outline: 0;
     border-radius: 8px;
     cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+th,
+td {
+    text-align: left;
+    padding: 0px;
 }

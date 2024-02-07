@@ -1,0 +1,87 @@
+@import "./tokens.scss";
+
+:export {
+    // Action
+    colorActionLightest: $color-action-lightest;
+    colorActionLight: $color-action-light;
+    colorActionMedium: $color-action-medium;
+    colorActionDark: $color-action-dark;
+    colorActionDarkest: $color-action-darkest;
+
+    // Neutral
+    colorNeutralLightest: $color-neutral-lightest;
+    colorNeutralLight: $color-neutral-light;
+    colorNeutralMedium04: $color-neutral-medium-04;
+    colorNeutralMedium03: $color-neutral-medium-03;
+    colorNeutralMedium02: $color-neutral-medium-02;
+    colorNeutralMedium01: $color-neutral-medium-01;
+    colorNeutralDark: $color-neutral-dark;
+    colorNeutralDarkest: $color-neutral-darkest;
+
+    // Alert
+    colorAlertInfo: $color-alert-info;
+    colorAlertSuccess: $color-alert-success;
+    colorAlertAttention: $color-alert-attention;
+    colorAlertError: $color-alert-error;
+
+    // Typography
+    fontFamilyDefault: $font-family-default;
+    fontFamilyLight: $font-family-light;
+    fontFamilyRegular: $font-family-regular;
+    fontFamilyMedium: $font-family-medium;
+    fontFamilyBold: $font-family-bold;
+
+    fontSizeNano: $font-size-nano;
+    fontSizeMicro: $font-size-micro;
+    fontSizeBase: $font-size-base;
+    fontSizeXxs: $font-size-xxs;
+    fontSizeXs: $font-size-xs;
+    fontSizeSm: $font-size-sm;
+    fontSizeMd: $font-size-md;
+    fontSizeLg: $font-size-lg;
+    fontSizeXl: $font-size-xl;
+    fontSizeXxl: $font-size-xxl;
+    fontSizeXxxl: $font-size-xxxl;
+    fontSizeGiant: $font-size-giant;
+    fontSizeHuge: $font-size-huge;
+
+    lineHeightLightest: $line-height-lightest;
+    lineHeightTight: $line-height-tight;
+    lineHeightMedium: $line-height-medium;
+    lineHeightLoose: $line-height-loose;
+
+    // Spacing
+    spacingNano: $spacing-nano;
+    spacingMicro: $spacing-micro;
+    spacingXxxs: $spacing-xxxs;
+    spacingXxs: $spacing-xxs;
+    spacingXs: $spacing-xs;
+    spacingSm: $spacing-sm;
+    spacingMd: $spacing-md;
+    spacingLg: $spacing-lg;
+    spacingXl: $spacing-xl;
+    spacingXxl: $spacing-xxl;
+    spacingGiant: $spacing-giant;
+    spacingHuge: $spacing-huge;
+
+    // Spacing squish
+    spacingSquishNano: $spacing-squish-nano;
+    spacingSquishMicro: $spacing-squish-micro;
+    spacingSquishSm: $spacing-squish-sm;
+    spacingSquishMd: $spacing-squish-md;
+    spacingSquishLg: $spacing-squish-lg;
+
+    // Lines
+    stroke100: $stroke-100;
+    stroke200: $stroke-200;
+    stroke300: $stroke-300;
+    stroke400: $stroke-400;
+    stroke500: $stroke-500;
+
+    // Borders
+    radius100: $radius-100;
+    radius200: $radius-200;
+    radius300: $radius-300;
+    radius400: $radius-400;
+    radiusPill: $radius-pill;
+}
