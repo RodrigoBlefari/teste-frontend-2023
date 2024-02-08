@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes } from "react";
+// import React, { ButtonHTMLAttributes } from "react";
 import styled, { css } from "styled-components";
 import tokens from "../../styles/variables.module.scss";
 import { ButtonSize, ButtonType } from "../enum/ButtonType";
@@ -53,40 +53,28 @@ const typeStyles = {
 
 // Componente estilizado para o botão
 const StyledButton = styled.button<{
-  btnSize: ButtonSize;
-  btnType: ButtonType;
+  btnsize: ButtonSize;
+  btntype: ButtonType;
 }>`
   border-radius: ${tokens.radius300};
   font-family: ${tokens.fontFamilyDigital};
   font-weight: ${tokens.fontWeightRegular};
   line-height: ${tokens.lineHeightTightest};
-  ${(props) => sizeStyles[props.btnSize]}
-  ${(props) => typeStyles[props.btnType]}
+  ${(props) => sizeStyles[props.btnsize]}
+  ${(props) => typeStyles[props.btntype]}
 `;
 
-// Props para o componente Button
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  btnSize?: ButtonSize;
-  btnType?: ButtonType;
+// Defina suas props personalizadas
+interface ButtonProps {
+  btntype: ButtonType;
+  btnsize: ButtonSize;
+  onClick: () => void;
+  children: React.ReactNode;
 }
 
-// Componente Button
-const Button: React.FC<ButtonProps> = ({
-  children,
-  btnSize = ButtonSize.LG,
-  btnType = ButtonType.PRIMARY,
-  ...props
-}) => {
-  return (
-    <StyledButton
-      btnSize={btnSize}
-      disabled={true}
-      btnType={btnType}
-      {...props}
-    >
-      {children}
-    </StyledButton>
-  );
+// Crie seu componente
+const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
+  return <StyledButton {...props}>{children}</StyledButton>;
 };
 
 export default Button;
