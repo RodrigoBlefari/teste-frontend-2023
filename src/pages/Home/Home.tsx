@@ -51,7 +51,7 @@ export function Home() {
     if (error) {
       setCustomers(customersMockup);
       setError(
-        `Ocorreu um erro ao buscar os API: ${error}. Para fins de entrevista foi pulada tabela usando mock.`
+        `Ocorreu um erro ao buscar na API: ${error}. Para fins de entrevista foi populada tabela usando mock.`
       );
     } else {
       setCustomers(data);
