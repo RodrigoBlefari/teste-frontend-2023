@@ -1,17 +1,10 @@
-import React, { useState } from "react";
 import styled from "styled-components";
 import Customer from "../interfaces/Customer";
 import tokens from "../styles/variables.module.scss";
-import { InputType } from "./enum/InputTextType";
-import InputText from "./ui/InputText";
 
 interface CustomerTableProps {
   customers: Customer[];
 }
-
-const ContainerInput = styled.div`
-  margin-bottom: ${tokens.spacingNano};
-`;
 
 const Table = styled.table`
   width: 100%;
@@ -96,23 +89,8 @@ const ContainerTable = styled.div`
 `;
 
 const CustomerTable: React.FC<CustomerTableProps> = ({ customers }) => {
-  const [filter, setFilter] = useState("");
-
-  const filteredCustomers = customers.filter((customer) =>
-    customer.email.includes(filter)
-  );
-
   return (
     <div>
-      <h2>Customers</h2>
-      <ContainerInput>
-        <InputText
-          label="Filtrar por e-mail"
-          onChange={(e) => setFilter(e.target.value)}
-          value={filter}
-          types={InputType.SUCCESS}
-        ></InputText>
-      </ContainerInput>
       <ContainerTable>
         <Table>
           <thead>
@@ -125,7 +103,7 @@ const CustomerTable: React.FC<CustomerTableProps> = ({ customers }) => {
             </TableRow>
           </thead>
           <tbody>
-            {filteredCustomers.map((customer) => (
+            {customers.map((customer) => (
               <TableRow key={customer.id}>
                 <TableCell data-label="ID">{customer.id}</TableCell>
                 <TableCell data-label="Nome">{customer.name}</TableCell>
