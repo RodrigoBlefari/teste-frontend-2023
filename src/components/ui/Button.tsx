@@ -36,7 +36,7 @@ const typeStyles = {
     }
   `,
   [ButtonType.SECONDARY]: css`
-    background-color: ${tokens.colorTransparent};
+    background: ${tokens.colorTransparent};
     border: ${tokens.stroke100} solid ${tokens.colorActionMedium};
     color: ${tokens.colorActionMedium};
 
