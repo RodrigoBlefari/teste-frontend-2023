@@ -72,6 +72,8 @@ export function Home() {
             btntype={ButtonType.SECONDARY}
             btnsize={ButtonSize.SM}
             onClick={() => setError(null)}
+            aria-label="Fechar mensagem de erro"
+            data-testid="close-error-button"
           >
             Fechar
           </CloseButton>
@@ -83,17 +85,24 @@ export function Home() {
           btntype={ButtonType.SECONDARY}
           btnsize={ButtonSize.MD}
           onClick={handleButtonClick}
+          aria-label="Buscar Customers"
+          data-testid="fetch-customers-button"
         >
           Buscar Customers
         </Button>
         <InputText
           label="Filtrar por e-mail"
+          aria-label="Filtrar por e-mail"
           onChange={(e) => setFilter(e.target.value)}
           value={filter}
           types={InputType.NORMAL}
+          data-testid="filter-input-textbox"
         />
       </ContainerInput>
-      <CustomerTable customers={filteredCustomers} />
+      <CustomerTable
+        customers={filteredCustomers}
+        data-testid="customer-table"
+      />
     </SectionCustomerList>
   );
 }
